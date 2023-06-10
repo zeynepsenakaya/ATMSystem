@@ -1,0 +1,171 @@
+<mxfile host="app.diagrams.net" modified="2023-06-04T16:25:41.774Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="4ijvgnQu2OpGPLNrG1F4" version="21.3.7" type="device">
+  <diagram name="Sayfa -1" id="KE8gBz_m_XdGC-LaIKHF">
+    <mxGraphModel dx="978" dy="538" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="T-0CM6QtQ5MvtbosjYcX-1" value="&lt;font color=&quot;#000000&quot;&gt;AnaHesap&lt;/font&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="270" y="50" width="280" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="T-0CM6QtQ5MvtbosjYcX-2" value="- bakiye: double&lt;br&gt;- hesapNo: int&lt;br&gt;- isim: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="T-0CM6QtQ5MvtbosjYcX-1" vertex="1">
+          <mxGeometry y="26" width="280" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="T-0CM6QtQ5MvtbosjYcX-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="T-0CM6QtQ5MvtbosjYcX-1" vertex="1">
+          <mxGeometry y="76" width="280" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="T-0CM6QtQ5MvtbosjYcX-4" value="+ AnaHesap(isim: String, hesapNo: int)&lt;br&gt;+ paraYatir(miktar: double): void&lt;br&gt;+ paraYatir(miktar: double, paraBirimi: String): void&lt;br&gt;+ paraCek(miktar: double): void&lt;br&gt;+ paraCek(miktar: double, paraBirimi: String): void&lt;br&gt;+ bakiyeSorgula(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="T-0CM6QtQ5MvtbosjYcX-1" vertex="1">
+          <mxGeometry y="84" width="280" height="106" as="geometry" />
+        </mxCell>
+        <mxCell id="zb3G9vRRQ3JYqy4OCRaD-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.515;entryY=-0.029;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=diamondThin;endFill=1;" edge="1" parent="1" source="T-0CM6QtQ5MvtbosjYcX-6" target="zb3G9vRRQ3JYqy4OCRaD-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430" y="710" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="230" y="425" />
+              <mxPoint x="420" y="425" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T-0CM6QtQ5MvtbosjYcX-6" value="&lt;font color=&quot;#000000&quot;&gt;ParaYatirma&lt;/font&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="60" y="290" width="340" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="T-0CM6QtQ5MvtbosjYcX-7" value="- anaHesap: AnaHesap" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="T-0CM6QtQ5MvtbosjYcX-6" vertex="1">
+          <mxGeometry y="26" width="340" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="T-0CM6QtQ5MvtbosjYcX-8" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="T-0CM6QtQ5MvtbosjYcX-6" vertex="1">
+          <mxGeometry y="52" width="340" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="T-0CM6QtQ5MvtbosjYcX-9" value="+&amp;nbsp;ParaYatirma(anaHesap: AnaHesap)&lt;br&gt;+ yatirilanParaMiktari(miktar: double, paraBirimi: String) : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="T-0CM6QtQ5MvtbosjYcX-6" vertex="1">
+          <mxGeometry y="60" width="340" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="T-0CM6QtQ5MvtbosjYcX-15" value="&lt;font color=&quot;#000000&quot;&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt; IParaYatir&lt;/font&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="440" y="450" width="330" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="T-0CM6QtQ5MvtbosjYcX-18" value="+ bakiyeSorgula(): void&lt;br&gt;+ paraYatir(miktar: double, paraBirimi: String): void&lt;br&gt;+ paraYatir(miktar: double): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="T-0CM6QtQ5MvtbosjYcX-15" vertex="1">
+          <mxGeometry y="26" width="330" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="zb3G9vRRQ3JYqy4OCRaD-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=diamondThin;endFill=1;" edge="1" parent="1" source="T-0CM6QtQ5MvtbosjYcX-20" target="zb3G9vRRQ3JYqy4OCRaD-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zb3G9vRRQ3JYqy4OCRaD-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=8 8;endArrow=block;endFill=0;" edge="1" parent="1" source="T-0CM6QtQ5MvtbosjYcX-20" target="T-0CM6QtQ5MvtbosjYcX-18">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="410" y="535" />
+              <mxPoint x="410" y="503" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zb3G9vRRQ3JYqy4OCRaD-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=8 8;endArrow=block;endFill=0;" edge="1" parent="1" source="T-0CM6QtQ5MvtbosjYcX-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="580" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="410" y="535" />
+              <mxPoint x="410" y="581" />
+              <mxPoint x="440" y="581" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T-0CM6QtQ5MvtbosjYcX-20" value="&lt;font color=&quot;#000000&quot;&gt;DovizHesabi&lt;br&gt;&lt;/font&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="60" y="450" width="340" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="T-0CM6QtQ5MvtbosjYcX-21" value="- döviz_bakiye: double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="T-0CM6QtQ5MvtbosjYcX-20" vertex="1">
+          <mxGeometry y="26" width="340" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="T-0CM6QtQ5MvtbosjYcX-22" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="T-0CM6QtQ5MvtbosjYcX-20" vertex="1">
+          <mxGeometry y="50" width="340" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="T-0CM6QtQ5MvtbosjYcX-23" value="+ DovizHesabi()&lt;br&gt;+ paraYatir(miktar: double): void&lt;br&gt;+ paraYatir(miktar: double, paraBirimi: String): void&lt;br&gt;+ paraCek(miktar: double): void&lt;br&gt;+ paraCek(miktar: double, paraBirimi: String): void&lt;br&gt;+ anaHesabaTransfer(anaHesap: AnaHesap): void&lt;br&gt;+ bakiyeSorgula(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="T-0CM6QtQ5MvtbosjYcX-20" vertex="1">
+          <mxGeometry y="58" width="340" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="zb3G9vRRQ3JYqy4OCRaD-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.002;entryY=0.865;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=diamondThin;endFill=1;" edge="1" parent="1" source="m-QZTygZQsYUhLbQxC02-5" target="zb3G9vRRQ3JYqy4OCRaD-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="760" y="961" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="610" y="425" />
+              <mxPoint x="800" y="425" />
+              <mxPoint x="800" y="780" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-QZTygZQsYUhLbQxC02-5" value="&lt;font color=&quot;#000000&quot;&gt;ParaCekme&lt;/font&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="440" y="290" width="340" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="m-QZTygZQsYUhLbQxC02-6" value="- anaHesap: AnaHesap" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="m-QZTygZQsYUhLbQxC02-5" vertex="1">
+          <mxGeometry y="26" width="340" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="m-QZTygZQsYUhLbQxC02-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="m-QZTygZQsYUhLbQxC02-5" vertex="1">
+          <mxGeometry y="52" width="340" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="m-QZTygZQsYUhLbQxC02-8" value="+&amp;nbsp;ParaCekme(anaHesap: AnaHesap)&lt;br&gt;+ cekilenParaMiktari(miktar: double, paraBirimi: String) : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="m-QZTygZQsYUhLbQxC02-5" vertex="1">
+          <mxGeometry y="60" width="340" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="zb3G9vRRQ3JYqy4OCRaD-1" value="&lt;font color=&quot;#000000&quot;&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt; IParaCek&lt;/font&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="440" y="550" width="330" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zb3G9vRRQ3JYqy4OCRaD-2" value="+ bakiyeSorgula(): void&lt;br&gt;+ paraCek(miktar: double, paraBirimi: String): void&lt;br&gt;+ paraCek(miktar: double): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="zb3G9vRRQ3JYqy4OCRaD-1">
+          <mxGeometry y="26" width="330" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="zb3G9vRRQ3JYqy4OCRaD-3" value="&lt;font color=&quot;#000000&quot;&gt;ATM_Sistem&lt;/font&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="85" y="690" width="650" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="zb3G9vRRQ3JYqy4OCRaD-4" value="- dovizHesabi: DovizHesabi&lt;br&gt;- paraYatirma: ParaYatirma&lt;br&gt;- paraCekme: ParaCekme&lt;br&gt;- anaHesap: AnaHesap&lt;br&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="zb3G9vRRQ3JYqy4OCRaD-3">
+          <mxGeometry y="26" width="650" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="zb3G9vRRQ3JYqy4OCRaD-5" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="zb3G9vRRQ3JYqy4OCRaD-3">
+          <mxGeometry y="100" width="650" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="zb3G9vRRQ3JYqy4OCRaD-6" value="+ ATM_Sistem(anaHesap: AnaHesap, paraCekme: ParaCekme, paraYatirma: ParaYatirma, dovizHesabi: DovizHesabi)&lt;br&gt;+ islemSecenekleri(): void&lt;br&gt;+ yapilacakIslem(secenek:int): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="zb3G9vRRQ3JYqy4OCRaD-3">
+          <mxGeometry y="108" width="650" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="zb3G9vRRQ3JYqy4OCRaD-32" value="" style="endArrow=diamondThin;html=1;rounded=0;exitX=-0.009;exitY=0.149;exitDx=0;exitDy=0;exitPerimeter=0;endFill=1;entryX=0.002;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="T-0CM6QtQ5MvtbosjYcX-4" target="zb3G9vRRQ3JYqy4OCRaD-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="260" y="150" as="sourcePoint" />
+            <mxPoint x="80" y="800" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="20" y="150" />
+              <mxPoint x="20" y="800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zb3G9vRRQ3JYqy4OCRaD-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=8 8;endArrow=block;endFill=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1.009;entryY=0.276;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="T-0CM6QtQ5MvtbosjYcX-2" target="T-0CM6QtQ5MvtbosjYcX-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="100" as="sourcePoint" />
+            <mxPoint x="790" y="490" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="790" y="100" />
+              <mxPoint x="790" y="491" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zb3G9vRRQ3JYqy4OCRaD-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=8 8;endArrow=block;endFill=0;exitX=1.011;exitY=0.233;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.013;entryY=0.276;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="T-0CM6QtQ5MvtbosjYcX-4" target="zb3G9vRRQ3JYqy4OCRaD-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="160" as="sourcePoint" />
+            <mxPoint x="783" y="590" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="553" y="160" />
+              <mxPoint x="810" y="160" />
+              <mxPoint x="810" y="591" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zb3G9vRRQ3JYqy4OCRaD-39" value="" style="endArrow=diamondThin;endFill=1;endSize=6;html=1;rounded=0;exitX=-0.013;exitY=0.631;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.408;entryY=-0.022;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="T-0CM6QtQ5MvtbosjYcX-4" target="T-0CM6QtQ5MvtbosjYcX-6">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="250" y="210" as="sourcePoint" />
+            <mxPoint x="500" y="280" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="200" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zb3G9vRRQ3JYqy4OCRaD-40" value="" style="endArrow=diamondThin;endFill=1;endSize=6;html=1;rounded=0;entryX=0.588;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="m-QZTygZQsYUhLbQxC02-5">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="550" y="202" as="sourcePoint" />
+            <mxPoint x="640" y="280" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="640" y="202" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
